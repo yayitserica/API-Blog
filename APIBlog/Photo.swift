@@ -8,6 +8,7 @@
 
 import Foundation
 
+//3 -
 class Photo {
     let img_src: URL
     let photoID: String
@@ -20,4 +21,42 @@ class Photo {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
