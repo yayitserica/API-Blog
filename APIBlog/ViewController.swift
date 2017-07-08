@@ -20,15 +20,14 @@ class ViewController: UIViewController, UICollectionViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        photoStore = PhotoStore()
         collectionView.dataSource = self
         photoStore.fetchNASAPhotos { (photosResult) in
             switch photosResult {
             case let .success(photos):
-                print("Successfully found \(photos.count)")
                 self.photosToDisplay = photos
                 print("these are the photos to display: \(self.photosToDisplay)")
-                print("")
-                dump(self.photosToDisplay)
             case let .failure(error):
                 print("Error fetching nasa photos: \(error)")
             }
@@ -57,9 +56,6 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         }
         return cell!
     }
-    
-    
-
 
 }
 

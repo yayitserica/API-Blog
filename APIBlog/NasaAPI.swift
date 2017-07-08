@@ -8,12 +8,7 @@
 
 import Foundation
 
-//https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=SkwW5KEaoj4DpytUZ0LNlQVCNKqHFuDPQMpDjmxl
-
-//Optional(https://api.flickr.com/services/rest?api_key=a335bf5c5f2e090aee7d7f555107b388&method=flickr.photos.getRecent&format=json&nojsoncallback=1&extras=url_h,date_taken)
-
-
-//5
+//1 -
 enum Camera: String {
     case FHAZ = "fhaz"
     case RHAZ = "rhaz"
@@ -22,7 +17,7 @@ enum Camera: String {
     case NAVCAM = "navcam"
 }
 
-//1
+//2
 struct NasaAPI {
     //2
     private static let baseURLString = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos"
@@ -31,7 +26,8 @@ struct NasaAPI {
     
     //5 
     static var roverURL: URL {
-        return nasaURL(camera: .FHAZ)
+//        return nasaURL(camera: .FHAZ)
+        return nasaURL(camera: .RHAZ)
     }
     
     //4
@@ -51,7 +47,8 @@ struct NasaAPI {
         }
         
         components.queryItems = queryItems
-//        print("this is the url: \(components.url)")
+        print("this is the url: \(String(describing: components.url))")
+        //this is the url: Optional(https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?camera=rhaz&api_key=SkwW5KEaoj4DpytUZ0LNlQVCNKqHFuDPQMpDjmxl&sol=1000)
         return components.url!
     }
     
@@ -95,3 +92,11 @@ struct NasaAPI {
     
     
 }
+
+
+
+
+
+
+
+
