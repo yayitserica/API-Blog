@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456D0A281F1178D2004E7D31 /* NasaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456D0A271F1178D2004E7D31 /* NasaCell.swift */; };
+		45968DD91F0FEAB8008A005B /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45968DD81F0FEAB8008A005B /* PhotoStore.swift */; };
+		45968DDB1F0FEB04008A005B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45968DDA1F0FEB04008A005B /* Photo.swift */; };
 		4598D85A1F0EE453006EAA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4598D8591F0EE453006EAA66 /* AppDelegate.swift */; };
 		4598D85C1F0EE453006EAA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4598D85B1F0EE453006EAA66 /* ViewController.swift */; };
 		4598D85F1F0EE453006EAA66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4598D85D1F0EE453006EAA66 /* Main.storyboard */; };
 		4598D8611F0EE453006EAA66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4598D8601F0EE453006EAA66 /* Assets.xcassets */; };
 		4598D8641F0EE453006EAA66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4598D8621F0EE453006EAA66 /* LaunchScreen.storyboard */; };
+		4598D86C1F0EE4A9006EAA66 /* NasaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4598D86B1F0EE4A9006EAA66 /* NasaAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		456D0A271F1178D2004E7D31 /* NasaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NasaCell.swift; sourceTree = "<group>"; };
+		45968DD81F0FEAB8008A005B /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		45968DDA1F0FEB04008A005B /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		4598D8561F0EE453006EAA66 /* APIBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4598D8591F0EE453006EAA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4598D85B1F0EE453006EAA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		4598D8601F0EE453006EAA66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4598D8631F0EE453006EAA66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4598D8651F0EE453006EAA66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4598D86B1F0EE4A9006EAA66 /* NasaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NasaAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				4598D8591F0EE453006EAA66 /* AppDelegate.swift */,
 				4598D85B1F0EE453006EAA66 /* ViewController.swift */,
 				4598D85D1F0EE453006EAA66 /* Main.storyboard */,
+				456D0A271F1178D2004E7D31 /* NasaCell.swift */,
+				4598D86B1F0EE4A9006EAA66 /* NasaAPI.swift */,
+				45968DDA1F0FEB04008A005B /* Photo.swift */,
+				45968DD81F0FEAB8008A005B /* PhotoStore.swift */,
 				4598D8601F0EE453006EAA66 /* Assets.xcassets */,
 				4598D8621F0EE453006EAA66 /* LaunchScreen.storyboard */,
 				4598D8651F0EE453006EAA66 /* Info.plist */,
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456D0A281F1178D2004E7D31 /* NasaCell.swift in Sources */,
 				4598D85C1F0EE453006EAA66 /* ViewController.swift in Sources */,
+				4598D86C1F0EE4A9006EAA66 /* NasaAPI.swift in Sources */,
+				45968DD91F0FEAB8008A005B /* PhotoStore.swift in Sources */,
 				4598D85A1F0EE453006EAA66 /* AppDelegate.swift in Sources */,
+				45968DDB1F0FEB04008A005B /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,7 @@
 				4598D86A1F0EE453006EAA66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
